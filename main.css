@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 html {
-    background: rgb(30, 126, 126);
+    background:black;
     width: 100%;
 }
 
@@ -33,13 +33,16 @@ h1 {
 
 nav {
     display: block;
-    width: 100%;
+    float: right;
+    width: 60%;
     padding-top: 15px;
     padding-bottom: 15px;
     line-height: 2.5em;
     background: grey;
 }
-
+nav ul li:hover {
+    opacity: .3;
+}
 nav ul {
     width: 80%;
     margin-left: auto;
@@ -67,7 +70,15 @@ nav ul li a {
     list-style-type: none;
     display: table-cell;
     text-decoration-line: none;
-    color: royalblue;
+    color: white;
+}
+nav ul li:hover {
+    opacity: .3;
 }
 
 /* Link Styles */
+/* Image Styles */
+header img {
+    width: 100%;
+    
+}
