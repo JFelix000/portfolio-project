@@ -3,20 +3,17 @@
 /* Structural Styles */
 html {
     background: lightskyblue;
-    display: flex;
-    display: -webkit-flex;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 body {
     background: white;
-    /* width: 75%; */
-    /* box-shadow: rgb(51, 51, 51) 10px 0px 40px, rgb(51, 51, 51) -10px 0px 40px;
-    border-left: 1px solid gray;
-    border-right: 1px solid gray; */
     min-height: 100%;   
     margin: 0px auto;
-    /* min-width: 400px;
-    max-width: 1024px;    */
-    width: 100%; 
+    width: 100%;
+}
+
+body header img {
+    background-image: url(space.jpg);
 }
 /* Header Styles */
 header {
@@ -28,28 +25,33 @@ header img {
     margin-right: auto;
     display: block;
 }
-header span {
-    position: absolute;
-    font-size: 25pt;
-    left: 25%;
-    top: 20%;
-    color: yellow;
+/* Header Imgs */
+header span#education img {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
-header span#west {
-    position: absolute;
-    font-size: 25pt;
-    left: 55%;
-    top: 40%;
+span img {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
-header span#next {
-    position: absolute;
-    font-size: 25pt;
-    left: 25%;
-    top: 60%;
+
+body article {
+    background: white;
 }
-textarea {
-    background: transparent;
-    border: none;
+article ul {
+    display: block;
+    list-style-type: disc;
+    float: left;
+}
+article span h1 {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 /* Nav Styles */
 nav ul{
@@ -75,23 +77,80 @@ nav li a {
 nav li a:hover {
     background-color: rgb(70, 69, 69);
 }
-/* article styles */
-h1 {
-    font-size: 22pt;
-}
+/* Article Styles */
 article {
     width: 70%;
     margin: 0px auto;
 }
-article p {
-    line-height: 1.4em;
-    font-size: 21pt;
+article h1 {
+    text-decoration: underline;
 }
+article p#intro {
+    font-size: 1.3em;
+    width: 90%;
+    margin: 0 auto;
+}
+article h1#edu {
+    font-size: 2em;
+    background-color: gold;
+    display: inline-block;
+    margin: 10px auto;
+}
+
 article p em a {
     text-decoration: none;
     color: lightblue;
 }
-article span {
-    margin-left: 40%;
+
+/* Table styles */
+table#me {
+    border: 5px outset maroon;
+    border-collapse: collapse;
+    font-size: 0.75em;
+    width: 100%;
+}
+table#me td {
+    border: 1px solid gold;
+    border-left: hidden;
+    padding-left: 10px;
+}
+table#me th {
+    padding-right: 10px;
+}
+
+table#me tr th span a img {
+    width: 200px;
+}
+table#me tr th#asu span a img {
+    width: 200px;
+}
+table#me tr td {
+    font-size: 1.5em;
+    line-height: 1.4em;
+}
+/* Footer Styles */
+footer a {
+    display: block;
+    width: 100%;
+    float: left;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: cyan;
+}
+
+footer p {
     width: 50%;
+    display: block;
+    float: left;
+}
+/* Mobile Styles */
+@media only screen and (max-width: 480px) {
+    nav li{
+        display: block;
+        margin: 0;
+        padding: 0;
+        float: none;
+        width: 100%;
+    }
 }
