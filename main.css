@@ -144,6 +144,43 @@ footer p {
     display: block;
     float: left;
 }
+/* Skills Images CSS */
+body article figure img {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+}
+body article h1 {
+    text-align: center;
+}
+body article figure figcaption {
+    display: table;
+    font-style: italic;
+    color: white;
+    background: grey;
+    font-size: 1.3em;
+}
+body article figure img#print {
+    float: right;
+}
+body article h2 {
+    font-size: 1.4em;
+}
+body article {
+    background: grey;
+}
+/* Work Experience */
+body article#experience {
+    background: white;
+    color: grey;
+}
+body article#experience h2 {
+    color: black;
+}
+body article#experience ul {
+    margin-left: 50px;
+}
 /* Mobile Styles */
 @media only screen and (max-width: 480px) {
     nav li{
