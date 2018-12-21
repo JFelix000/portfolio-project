@@ -31,11 +31,13 @@ header {
 body h1 {
     text-align: center;
 }
+/* I did this to make the body centered with the use of auto and width is 60% so I can get a skinnier place for my content to be placed at. */
 body p {
     width: 60%;
     margin: 0 auto;
     background: grey;
 }
+/* I edited the width for the same reason and have the display of block so it can take the full length of the entire browser */
 header img {
     width: 70%;
     margin-left: auto;
@@ -43,6 +45,7 @@ header img {
     display: block;
 }
 /* Header Imgs */
+/* I had to make this one specific because at the time it was placed in an odd place that didn't get the same styles as the rest of my pages. Using auto it centers the item. */
 header span#education img {
     width: 50%;
     margin-left: auto;
@@ -77,6 +80,7 @@ article span h1 {
     display: block;
 }
 /* Nav Styles */
+/* I have overflow hidden so that if anything goes past the allotted space it won't show or cut into another section of the code. That is just a safeguard. */
 nav ul{
     list-style-type: none;
     margin: none;
@@ -86,6 +90,7 @@ nav ul{
     
 }
 nav li {
+    /* This was to make my nav appear on the right side like I wanted it to. the width is usually amount/100 but I didn't want my nav to span the whole page. That being said, it takes a total of 60 percent of the browser. */
     float: right;
     width: 15%;
     flex-direction: column-reverse;
@@ -113,6 +118,7 @@ article p#intro {
     width: 90%;
     margin: 0 auto;
 }
+/* I added an id to the h1 by saying #edu and it helped to make the other h1's a different width that they should be. I didn't want them to all be the same size since it looks really messed up on other pages that way */
 article h1#edu {
     font-size: 2em;
     background-color: gold;
@@ -125,21 +131,24 @@ article p em a {
 }
 
 /* Table styles */
+/* I had the most fun making this table because it was something that we just finished doing in class. The intent here was to make that 5px outset to show the outer layer of my table */
 table#me {
     border: 5px outset maroon;
     border-collapse: collapse;
     font-size: 0.75em;
     width: 100%;
 }
+/* The border-left hidden makes it do that it won't show that specific border, and in my opinion, it looks a lot better for it to be there without a border. That way it looks less boxy. */
 table#me td {
     border: 1px solid gold;
     border-left: hidden;
     padding-left: 10px;
 }
+/* I had to add this padding to help with the flow of everything and how it looks to the viewer */
 table#me th {
     padding-right: 10px;
 }
-
+/* I did a specific width for it to make a better use of the space, because by default it was a very large image. */
 table#me tr th span a img {
     width: 200px;
 }
@@ -151,6 +160,7 @@ table#me tr td {
     line-height: 1.4em;
 }
 /* Footer Styles */
+/* This footer is made like this to span the link all the way accross so anywhere the person hovers the mouse it will change a bit and be clickable */
 footer a {
     display: block;
     width: 100%;
@@ -160,7 +170,7 @@ footer a {
     padding-bottom: 10px;
     color: cyan;
 }
-
+/* I did 50% because I only have 2 icons to put there */
 footer p {
     width: 50%;
     display: block;
@@ -186,6 +196,7 @@ body article figure figcaption {
 body article figure img#print {
     float: right;
 }
+/* I used ems here so it would be relative to the screen output and such */
 body article h2 {
     font-size: 1.4em;
 }
@@ -197,6 +208,7 @@ body article#experience {
     background: white;
     color: grey;
 }
+/* I had to use this selector to get rid of the container collapse that was happening here. The code is the same every time for container collapse. */
 body article#experience h2 {
     color: black;
     font-size: 1.3em;
@@ -209,6 +221,7 @@ article#experience ul {
     margin-left: 20px;
 }
 /* Container Collapse */
+/* Same code as always, I made a class and put these rules, it fixed the page. */
 body article.container {
     display: table;
     clear: both;
