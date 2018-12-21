@@ -93,7 +93,6 @@ article p#intro {
 article h1#edu {
     font-size: 2em;
     background-color: gold;
-    display: inline-block;
     margin: 10px auto;
 }
 
@@ -168,7 +167,7 @@ body article h2 {
     font-size: 1.4em;
 }
 body article {
-    background: grey;
+    background: silver;
 }
 /* Work Experience */
 body article#experience {
@@ -177,10 +176,22 @@ body article#experience {
 }
 body article#experience h2 {
     color: black;
+    font-size: 1.3em;
+    clear: left;
+    content: "";
+    display: table;
 }
-body article#experience ul {
-    margin-left: 50px;
+
+article#experience ul {
+    margin-left: 20px;
 }
+/* Container Collapse */
+body article.container {
+    display: table;
+    clear: both;
+    content: "";
+}
+
 /* Mobile Styles */
 @media only screen and (max-width: 480px) {
     nav li{
